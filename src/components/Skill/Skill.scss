@@ -1,0 +1,79 @@
+$primary: #34353a;
+$secondary: #2E2F34;
+$tertiary: #FFFFFF;
+$textprimary: #E6AE4D;
+
+.component-background {
+  background-color: $primary;
+  padding: 20px;
+}
+
+.battery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    width: 92%;
+    border: solid thin $tertiary;
+}
+
+.bar {
+    width: 3%;
+    border: solid thin rgba(255, 255, 255, 0.1);
+    padding: 2%;
+    height: 80%;
+    background: $secondary;
+}
+
+.active-border {
+    width: 3%;
+    border: solid thin rgba(255, 255, 255, 0.1);
+    padding: 2%;
+    height: 80%;
+    background: $tertiary;
+}
+
+.section-paragraph{
+    width: 570px;
+    color: #FFFFFF;
+    font-weight:400;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -20px;
+}
+
+.bar-heading
+{
+    font-family: 'Roboto', sans-serif;;
+    color: $textprimary;
+    font-weight:400;
+    font-size: 18px;
+    position: absolute;
+    top: -45px;
+}
+ 
+.bar-percentage
+{
+    font-family: 'Roboto', sans-serif;;
+    color: $textprimary;
+    font-weight:400;
+    font-size: 18px;
+    position: absolute;
+    top: -4%;
+    right: 0;
+}
+
+.battery-container{
+    position: relative;
+    width: 750px;
+    margin-top: 50px;
+}
+
+.batteries{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}

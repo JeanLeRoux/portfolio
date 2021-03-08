@@ -1,0 +1,7 @@
+/* define primary colors */
+$background: #2E2F34;
+
+/* use the variables */
+.component-background {
+  background-color: $background; // here you can put an inline comment
+}
