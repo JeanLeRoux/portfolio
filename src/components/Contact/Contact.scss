@@ -1,0 +1,29 @@
+$primary: #2E2F34;
+$seconday: #34353a;
+$textprimary: #E6AE4D;
+
+.contact-background {
+    background-color: $primary;
+    padding: 20px;
+  }
+  
+.contact-div{
+  background-color: $seconday;
+  padding: 5px;
+  width: 30%;
+}
+
+.contact-details{
+  font-family: 'Roboto', sans-serif;;
+  color: $textprimary;
+  font-weight:400;
+  font-size: 24px;
+}
+
+.contact-method-container{
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

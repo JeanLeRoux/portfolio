@@ -1,0 +1,28 @@
+$white: #FFFFFF;
+$heading1: #E6AE4D;
+
+.section-paragraph{
+    width: 570px;
+    color: $white;
+    font-weight:400;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -20px;
+}
+
+.heading1{
+    color: $heading1;
+    font-weight:400;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading2{
+    color: $white;
+    font-weight:700;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -10px;
+}

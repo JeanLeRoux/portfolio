@@ -3,7 +3,7 @@ $secondary: #2E2F34;
 $tertiary: #FFFFFF;
 $textprimary: #E6AE4D;
 
-.component-background {
+.skill-background {
   background-color: $primary;
   padding: 20px;
 }
@@ -31,17 +31,6 @@ $textprimary: #E6AE4D;
     padding: 2%;
     height: 80%;
     background: $tertiary;
-}
-
-.section-paragraph{
-    width: 570px;
-    color: #FFFFFF;
-    font-weight:400;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: -20px;
 }
 
 .bar-heading

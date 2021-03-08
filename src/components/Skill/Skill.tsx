@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Headings from "../Common/Headings/Headings";
 import "../Skill/Skill.scss";
 import SkillBar from "./SkillBar";
 
@@ -37,7 +38,8 @@ export default function Skill() {
     ]
     );
   return (
-    <div className={"component-background"}>
+    <div className={"skill-background"}>
+      <Headings headingOne={"SERVICES"} headingTwo={"What I Am Good At"} paragraph={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "}/>
       <div className={"batteries"}>
         {languages.map((language)=>(
           <SkillBar name={language.name} percentage={language.percentage}/>
