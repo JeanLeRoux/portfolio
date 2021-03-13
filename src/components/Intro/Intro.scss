@@ -1,7 +1,82 @@
 /* define primary colors */
 $background: #2E2F34;
+$white: #FFFFFF;
+$heading1: #E6AE4D;
 
 /* use the variables */
 .component-background {
-  background-color: $background; // here you can put an inline comment
+  background-color: $background;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container{
+  align-self: center;
+  width: 27%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  z-index: 0;
+}
+
+.personal-image{
+  width: 100%;
+  align-self: center;
+}
+
+.background-shape{
+  background-color: #2B2B33;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  align-self: center;
+  z-index: -1;
+  top: 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+  font-weight:700;
+  font-size: 48px;
+  align-self: center;
+  margin-left: 70px;
+}
+
+.logo-dot
+{
+  color: $heading1;
+}
+
+.link-container{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  justify-self: flex-end;
+}
+
+.links{
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+  font-weight:700;
+  font-size: 18px;
+  align-self: center;
+}
+
+.content{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.name-heading{
+  text-align: left;
 }
