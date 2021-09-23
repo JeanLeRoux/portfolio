@@ -4,7 +4,7 @@ import '../About/About.scss'
 
 const About: FC = () => {
     return (
-        <div className={"contact-background"}>
+        <div className={"about-background"}>
             <Headings headingOne={"ABOUT"} headingTwo={"Who Am I"} paragraph={""}/>
             <p className={"about-paragraph"}>I am willing to learn and can adapt to any situation. 
                 My greatest personal trait is that I love solving problems and 
@@ -17,5 +17,4 @@ const About: FC = () => {
         </div>
     )
 }
-
 export default About

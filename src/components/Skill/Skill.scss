@@ -35,7 +35,7 @@ $textprimary: #E6AE4D;
 
 .bar-heading
 {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     color: $textprimary;
     font-weight:400;
     font-size: 18px;
@@ -71,7 +71,13 @@ $textprimary: #E6AE4D;
     position: relative;
     width: 750px;
     margin-top: 50px;
-    @media (max-width:800px) {
+    @media (max-width:1600px) {
+        width: 600px;
+    }
+    @media (max-width:1300px) {
+        width: 500px;
+    }
+    @media (max-width:1040px) {
         width: 90%;
     }
 }

@@ -29,7 +29,7 @@ const Contact: FC = () => {
     ]);
     return (
         <div className={"contact-background"}>
-            <Headings headingOne={"CONTACT US"} headingTwo={"Ways To Contact Me"} paragraph={""}/>
+            <Headings headingOne={"CONTACT"} headingTwo={"Ways To Contact Me"} paragraph={""}/>
         
             <div className={"contact-method-container"}> 
                 {contactDetails.map((information)=>(<ContactMethods icon={information.icon} details={information.details}/>))}
