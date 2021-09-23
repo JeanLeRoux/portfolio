@@ -5,7 +5,7 @@ import SkillBar from "./SkillBar";
 
 interface languageType{
   name: string
-  percentage: string
+  score: number
 }
 
 export default function Skill() {
@@ -13,27 +13,27 @@ export default function Skill() {
     [
       {
         'name':'PYTHON',
-        'percentage':'70%'
+        'score':8
       },
       {
         'name':'HTML',
-        'percentage':'30%'
+        'score':8
       },
       {
         'name':'CSS',
-        'percentage':'70%'
+        'score':8
       },
       {
         'name':'REACT',
-        'percentage':'70%'
+        'score':8
       },
       {
-        'name':'JAVA',
-        'percentage':'70%'
+        'name':'AWS',
+        'score':8
       },
       {
         'name':'JAVASCRIPT',
-        'percentage':'70%'
+        'score':8
       },
     ]
     );
@@ -42,7 +42,7 @@ export default function Skill() {
       <Headings headingOne={"SERVICES"} headingTwo={"What I Am Good At"} paragraph={""}/>
       <div className={"batteries"}>
         {languages.map((language)=>(
-          <SkillBar name={language.name} percentage={language.percentage}/>
+          <SkillBar name={language.name} score={language.score}/>
         ))}
       </div>
     </div>
