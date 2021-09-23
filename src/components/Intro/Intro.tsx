@@ -15,11 +15,11 @@ export default function Intro() {
                 
             </div>
             <div className={"content"}>
-                <div>
+                {/* <div>
                     <h1 className={"name-heading"}>Jean <br></br> Le Roux.</h1>
-                </div>
+                </div> */}
                 <div className={"image-container"}>
-                    <div className={"background-shape"}></div>  
+                    <div className={"background-shape"}/>  
                     <img className={"personal-image"} src={personalImage}/>
                 </div>
             </div>

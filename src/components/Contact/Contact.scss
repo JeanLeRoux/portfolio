@@ -9,21 +9,40 @@ $textprimary: #E6AE4D;
   
 .contact-div{
   background-color: $seconday;
+  display: flex;
   padding: 5px;
+  justify-content: center;
   width: 30%;
+  @media (max-width:1070px) {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+  }
+}
+
+.contact-icons{
+  color: #FFFFFF;
+  margin-right: 10px;
 }
 
 .contact-details{
   font-family: 'Roboto', sans-serif;;
   color: $textprimary;
   font-weight:400;
-  font-size: 18px;
+  font-size: 12px;
+  @media (min-width:800px) {
+    font-size: 14px;
+  }
 }
 
 .contact-method-container{
   justify-content: space-evenly;
   display: flex;
-  flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 50px;
+  @media (max-width:1070px) {
+    flex-direction: column;
+    margin-top: 30px;
+  }
 }

@@ -41,27 +41,44 @@ $textprimary: #E6AE4D;
     font-size: 18px;
     position: absolute;
     top: -45px;
+    @media (max-width:800px) {
+        font-size: 14px;
+        top: -35px;
+    }
 }
  
-.bar-percentage
-{
-    font-family: 'Roboto', sans-serif;;
-    color: $textprimary;
-    font-weight:400;
-    font-size: 18px;
-    position: absolute;
-    top: -4%;
-    right: 0;
-}
+// .bar-percentage
+// {
+//     font-family: 'Roboto', sans-serif;;
+//     color: $textprimary;
+//     font-weight:400;
+//     font-size: 18px;
+//     position: absolute;
+//     top: -4%;
+//     right: 0;
+//     @media (max-width:800px) {
+//         top: -8%;
+//         right: -25px;
+//         font-size: 14px;
+//     }
+//     @media (max-width:500px) {
+//         top: -12%;
+//         right: -35px;
+//     }
+// }
 
 .battery-container{
     position: relative;
     width: 750px;
     margin-top: 50px;
+    @media (max-width:800px) {
+        width: 90%;
+    }
 }
 
 .batteries{
     justify-content: space-evenly;
+    align-content: center;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;

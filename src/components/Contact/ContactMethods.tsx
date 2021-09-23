@@ -1,20 +1,22 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 
 interface props{
-    contactType:string,
+    icon: string,
     details:string,
 }
 
 
-const ContactMethods: FC<props> =({contactType,details})=> {
+const ContactMethods: FC<props> =({icon, details})=> {
     return (
+        <>
         <div className={"contact-div"}>
-            
-            <i className="fa fa-phone"></i>
-            <h2 className={"contact-details"}>{details}</h2>
+            <h2 className={"contact-details"}><span className={[icon,"contact-icons"].join(" ")}/>{details}</h2>
         </div>
+        </>
     )
 }
 
 export default ContactMethods
+
+

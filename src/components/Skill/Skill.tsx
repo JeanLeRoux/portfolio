@@ -9,7 +9,7 @@ interface languageType{
 }
 
 export default function Skill() {
-  const [languages, setLanguages] = useState<languageType[]>(
+  const [languages,] = useState<languageType[]>(
     [
       {
         'name':'PYTHON',
@@ -39,7 +39,7 @@ export default function Skill() {
     );
   return (
     <div className={"skill-background"}>
-      <Headings headingOne={"SERVICES"} headingTwo={"What I Am Good At"} paragraph={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "}/>
+      <Headings headingOne={"SERVICES"} headingTwo={"What I Am Good At"} paragraph={""}/>
       <div className={"batteries"}>
         {languages.map((language)=>(
           <SkillBar name={language.name} percentage={language.percentage}/>

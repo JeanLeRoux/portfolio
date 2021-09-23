@@ -6,7 +6,6 @@ interface props{
 }
 const SkillBar: FC<props> = ({name, percentage}) => {
   return (
-    <div>
       <div className={"battery-container"}>
         <h3 className={"bar-heading"}>{name}</h3>
         <div className={"battery"}>
@@ -21,9 +20,7 @@ const SkillBar: FC<props> = ({name, percentage}) => {
           <div className={"bar"}></div>
           <div className={"bar"}></div>
         </div>
-        <h3 className={"bar-percentage"}>{percentage}</h3>
       </div>
-    </div>
   );
 };
 
