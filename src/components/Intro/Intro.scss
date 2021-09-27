@@ -1,119 +1,125 @@
 /* define primary colors */
-$background: #2E2F34;
-$white: #FFFFFF;
-$heading1: #E6AE4D;
+$background: #2e2f34;
+$white: #ffffff;
+$heading1: #e6ae4d;
 
 @mixin font {
   align-self: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: $white;
-  font-weight:700;
+  font-weight: 700;
 }
 
-@mixin positioning {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* use the variables */
 .component-background {
-  background-color: $background;
+  background: $background;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
+  .logo {
+    @include font();
+    font-size: 48px;
+    margin-left: 70px;
+  }
+
+  .logo-dot {
+    color: $heading1;
+  }
+
+  .link-container {
+    width: 30%;
+    display: flex;
+  justify-content: space-evenly;
+    justify-self: flex-end;
+    .links {
+      @include font();
+      font-size: 18px;
+    }
+  }
 }
 
-.logo{
-  @include font();
-  font-size: 48px;
-  margin-left: 70px;
+.content {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 10% repeat(3, 1fr) 10%;
+  grid-template-rows: 10% 4fr 1fr;
+  position: relative;
 }
 
-.logo-dot
-{
-  color: $heading1;
+.title-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  .title {
+    text-align: left;
+    @include font();
+    font-size: 72px;
+    .dot {
+      color: $heading1;
+    }
+  }
+  .contact-button {
+    @include font();
+    font-size: 20px;
+    width: 30%;
+    border: 1px solid $heading1;
+    padding: 10px;
+    color: $heading1;
+  }
 }
 
-.link-container{
-  width: 30%;
-  @include positioning();
-  justify-self: flex-end;
-}
+.description-container {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  .container-heading {
+    font-family: "Roboto", sans-serif;
+    color: $white;
+    font-weight: 400;
+    text-align: left;
+    color: $heading1;
+  }
 
-.links{
-  @include font();
-  font-size: 18px;
-}
+  .container-sub {
+    @include font();
+    font-size: 48px;
+    text-align: left;
+  }
 
-.content{
-  @include positioning();
-}
+  .divider{
+    background: $heading1;
+    width: 20%;
+    height: 2px;
+  }
 
-.name-heading{
-  text-align: left;
-  @include font();
-  font-size: 72px;
-}
-
-.name-container{
-  width: 30%;
-}
-
-.profession-container{
-  width: 30%;
-}
-
-.profession-container-heading{
-  font-family: 'Roboto', sans-serif;
-  color: $white;
-  font-weight:400;
-  text-align: left;
-  color: $heading1;
-}
-
-.profession-container-sub{
-  @include font();
-  font-size: 48px;
-  text-align: left;
-}
-
-.contact-button{
-  @include font();
-  font-size: 20px;
-  width: 50%;
-  border: 1px solid $heading1;
-  padding: 20px;
-  color: $heading1;
+  .description{
+    font-family: "Roboto", sans-serif;
+    color: $white;
+    font-weight: 400;
+    text-align: left;
+  }
 }
 
 .image-container{
-  width: 30%;
-  // align-self: center;
-  // width: 27%;
-  // position: absolute;
-  // display: flex;
-  // flex-direction: column;
-  // bottom: 0;
-  // z-index: 0;
+  grid-column: 3/4;
+  grid-row: 2/4;
+  .personal-image {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+  }
+  
+  .background-shape{
+    background-color: #2B2B33;
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: 0;
+  }
 }
 
-.personal-image{
-  width: 100%;
-  align-self: center;
-}
 
-.background-shape{
-  background-color: #2B2B33;
-  width: 100%;
-  height: 65%;
-  border-radius: 50%;
-  position: absolute;
-  align-self: center;
-  z-index: -1;
-  top: 0;
-}

@@ -4,15 +4,16 @@ $textprimary: #E6AE4D;
 
 .about-background {
     background-color: $seconday;
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
 .about-paragraph{
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-weight:400;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
 }

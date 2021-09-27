@@ -5,7 +5,10 @@ $textprimary: #E6AE4D;
 
 .skill-background {
   background-color: $primary;
-  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left:10%;
+  padding-right:10%;
 }
 
 .battery {
@@ -83,7 +86,7 @@ $textprimary: #E6AE4D;
 }
 
 .batteries{
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
     display: flex;
     flex-wrap: wrap;
