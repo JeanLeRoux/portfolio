@@ -8,7 +8,7 @@ import WorkHistory from './components/WorkHistory/WorkHistory';
 function App() {
   return (
     <div className="App">
-      {/* <Intro/> */}
+      <Intro/>
       <About/>
       <WorkHistory/>
       <Skill/>
