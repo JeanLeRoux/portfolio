@@ -19,7 +19,7 @@ const Contact: FC = () => {
         {
             "contactType":"Linkedin",
             "icon":"fa fa-linkedin",
-            "details":"http://linkedin.com/in/jean-le-roux-43306019b"
+            "details":" www.linkedin.com/in/JeanLR"
         },
         {
             "contactType":"Email",

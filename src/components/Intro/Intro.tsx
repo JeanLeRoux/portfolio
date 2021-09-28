@@ -4,7 +4,7 @@ import personalImage from "../../Assets/personalImage.png";
 export default function Intro() {
   return (
     <div className={"component-background"}>
-      <div className={"navbar"}>
+      {/* <div className={"navbar"}>
                 <h1 className={"logo"}>JLR<span className={"logo-dot"}>.</span></h1>
                 <div className={"link-container"}>
                     <h3 className={"links"}>ABOUT</h3>
@@ -12,7 +12,7 @@ export default function Intro() {
                     <h3 className={"links"}>SKILL</h3>
                 </div>
                 
-            </div>
+            </div> */}
       <div className={"content"}>
         <div className={"title-container"}>
           <h1 className={"title"}>
@@ -21,7 +21,7 @@ export default function Intro() {
           <div className={"contact-button"}>CONTACT ME</div>
         </div>
         <div className="image-container">
-          <span className={"background-shape"}/>
+          {/* <span className={"background-shape"}/> */}
           <img className={"personal-image"} src={personalImage} />
         
         </div>

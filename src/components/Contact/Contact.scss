@@ -33,6 +33,7 @@ $textprimary: #E6AE4D;
   font-family: 'Roboto', sans-serif;
   color: $textprimary;
   font-weight:400;
+  user-select: text;
   font-size: 12px;
   @media (min-width:800px) {
     font-size: 14px;
